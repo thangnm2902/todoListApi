@@ -1,0 +1,26 @@
+{
+  "name": "todolistapi",
+  "version": "1.0.0",
+  "description": "REstful todoListApi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: copy project\"",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "Restful",
+    "API",
+    "Tutorial"
+  ],
+  "author": "thangnm",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^0.20.0",
+    "mongoose": "^5.8.11",
+    "mysql": "^2.18.1"
+  }
+}
