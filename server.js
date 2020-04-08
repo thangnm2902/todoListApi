@@ -3,6 +3,7 @@ var express = require('express'),
   port = process.env.PORT || 3000,
   mongoose = require('mongoose'),
   Task = require('./api/models/todoListModel'), //created model loading here
+  User = require('./api/models/userModel'), //created model loading here
   bodyParser = require('body-parser');
   
  
@@ -22,6 +23,9 @@ app.use(bodyParser.json());
 
 var routes = require('./api/routes/todoListRoutes'); //importing route
 routes(app); //register the route
+
+var userroutes = require('./api/routes/userRoute'); //importing route
+userroutes(app); //register the route
 
 const proxy = require('http-proxy-middleware');
 
